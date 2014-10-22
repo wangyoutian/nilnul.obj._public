@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2EE4F2D-31A5-4A93-BB05-B9EC6A0B6722}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.op.bi.generic</RootNamespace>
+    <AssemblyName>nilnul.op.bi.generic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="expr\BiOpCallLiteral%28A1,A2,Op,P1,P2,R%29.cs" />
+    <Compile Include="expr\BiOpCallExprl%28A1,A2,Op,P1,P2,R%29.cs" />
+    <Compile Include="expr\ClosedBiOpCallLiteral%28P%29.cs" />
+    <Compile Include="expr\BiOpCallExpr%28P1,P2,R%29.cs" />
+    <Compile Include="expr\BiOpCallLiteral%28P1,P2,R%29.cs" />
+    <Compile Include="expr\ClosedBiOpExpr%28P%29.cs" />
+    <Compile Include="FuncAsBiOp%28P1,P2,R%29.cs" />
+    <Compile Include="BiOpI%28P1,P2%29.cs" />
+    <Compile Include="BiOpI%28P1,P2,R%29.cs" />
+    <Compile Include="BiOpI%28R%29.cs" />
+    <Compile Include="BiOpI.cs" />
+    <Compile Include="ClosedBiOpI%28T%29.cs" />
+    <Compile Include="expr\BiOpCallA%28A1,A2%29.cs" />
+    <Compile Include="expr\BiOpCallA%28A1,A2, Op%29.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="biOp.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nilnul%28%29\nilnul%28%29 %28111222p%29.csproj">
+      <Project>{AFE38639-D470-4957-AE9A-AAA86E4ADA93}</Project>
+      <Name>nilnul%28%29 %28111222p%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nilnul.op.generic%28unspecified for all op%29%28111221%29\nilnul%28.op generic unspecified for all op%29%28111221%29p.csproj">
+      <Project>{562993BB-357B-4733-A34B-D704FE3F62F9}</Project>
+      <Name>nilnul%28.op generic unspecified for all op%29%28111221%29p</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

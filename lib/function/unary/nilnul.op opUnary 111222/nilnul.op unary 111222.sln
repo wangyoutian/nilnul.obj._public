@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul.op unary 111222p", "nilnul.op unary 111222p.csproj", "{2229C5C3-65BF-4730-A43F-5CCCE52D81E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul 111222.0102p", "..\nilnul._111222.0102p\nilnul 111222.0102p.csproj", "{B3BBF62A-75A1-41F8-AC38-E713DBDC59B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nilnul.op 111221p", "..\nilnul.op 111221p\nilnul.op 111221p.csproj", "{562993BB-357B-4733-A34B-D704FE3F62F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2229C5C3-65BF-4730-A43F-5CCCE52D81E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2229C5C3-65BF-4730-A43F-5CCCE52D81E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2229C5C3-65BF-4730-A43F-5CCCE52D81E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2229C5C3-65BF-4730-A43F-5CCCE52D81E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BBF62A-75A1-41F8-AC38-E713DBDC59B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BBF62A-75A1-41F8-AC38-E713DBDC59B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BBF62A-75A1-41F8-AC38-E713DBDC59B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BBF62A-75A1-41F8-AC38-E713DBDC59B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562993BB-357B-4733-A34B-D704FE3F62F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562993BB-357B-4733-A34B-D704FE3F62F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562993BB-357B-4733-A34B-D704FE3F62F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562993BB-357B-4733-A34B-D704FE3F62F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

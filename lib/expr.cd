@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="LiteralI2&lt;T&gt; here stands for the T value">
+    <Position X="0.614" Y="10.625" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="ExprI shoud be moved to nilnu.op where it's a function call (possible a composit function.)">
+    <Position X="1.029" Y="2.058" Height="1.583" Width="2.356" />
+  </Comment>
+  <Interface Name="nilnul_obj.ExprI&lt;T&gt;" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExprI(T).cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul_obj.ExprI" Collapsed="true">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExprI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul_obj.LiteralI2&lt;T&gt;">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LiteralI2_T_.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul1.Ref&lt;T&gt;">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ref.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

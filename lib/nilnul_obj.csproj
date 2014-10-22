@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68C831DA-7DD1-4320-9315-34CFFC4D70E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul_obj</RootNamespace>
+    <AssemblyName>nilnul_obj</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionX.cs" />
+    <Compile Include="bit\Absurdity.cs" />
+    <Compile Include="bit\AdjectiveI%28T%29.cs" />
+    <Compile Include="bit\Antonym.cs" />
+    <Compile Include="bit\Assert%28static.cs" />
+    <Compile Include="bit\Assert%28T%29.cs" />
+    <Compile Include="bit\AssertFuncNegative.cs" />
+    <Compile Include="bit\AssertX.cs" />
+    <Compile Include="bit\Axiom%28T.cs" />
+    <Compile Include="bit\Axiom.cs" />
+    <Compile Include="bit\collection\BitX.cs" />
+    <Compile Include="bit\Contingency.cs" />
+    <Compile Include="bit\ContingencyI.cs" />
+    <Compile Include="bit\ContradictionI.cs" />
+    <Compile Include="bit\op\binary\And.cs" />
+    <Compile Include="bit\op\binary\BinaryI.cs" />
+    <Compile Include="bit\op\binary\Diff.cs" />
+    <Compile Include="bit\op\binary\DiffX.cs" />
+    <Compile Include="bit\op\binary\Eq.cs" />
+    <Compile Include="bit\op\binary\Imply.cs" />
+    <Compile Include="bit\op\binary\ImplyX.cs" />
+    <Compile Include="bit\op\binary\Nand.cs" />
+    <Compile Include="bit\op\binary\Nor.cs" />
+    <Compile Include="bit\op\binary\NotImply.cs" />
+    <Compile Include="bit\op\binary\NotImplyX.cs" />
+    <Compile Include="bit\op\binary\Or.cs" />
+    <Compile Include="bit\op\binary\Xor.cs" />
+    <Compile Include="bit\op\unary\Not.cs" />
+    <Compile Include="bit\op\unary\UnaryI.cs" />
+    <Compile Include="bit\Possible.cs" />
+    <Compile Include="bit\Predicate%28Static.cs" />
+    <Compile Include="bit\Predicate%28T.cs" />
+    <Compile Include="bit\Predicate%28T1,T2.cs" />
+    <Compile Include="bit\PredicateI%28T.cs" />
+    <Compile Include="bit\PredicateI.cs" />
+    <Compile Include="bit\PredicateSingleton.cs" />
+    <Compile Include="bit\PredicateSingletonI%28T.cs" />
+    <Compile Include="bit\StaticAssert%28T.cs" />
+    <Compile Include="bit\TautologyI.cs" />
+    <Compile Include="bit\TypeWithPredicate.cs" />
+    <Compile Include="Box%28TOriginal%29.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="CollectionTostrX.cs" />
+    <Compile Include="ConstI%28T%29.cs" />
+    <Compile Include="ConstI.cs" />
+    <Compile Include="ConstraintedType.cs" />
+    <Compile Include="EachXForIEnumerableT.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="ElementI.cs" />
+    <Compile Include="Equal.cs" />
+    <Compile Include="EqX.cs" />
+    <Compile Include="ExprI%28T%29.cs" />
+    <Compile Include="ExprI.cs" />
+    <Compile Include="Extended%28T%29.cs" />
+    <Compile Include="FuncAsEqualityComparer.cs" />
+    <Compile Include="FuncAsEqualityComparer2.cs" />
+    <Compile Include="function\binary\Expr.cs" />
+    <Compile Include="function\binary\ExprA.cs" />
+    <Compile Include="function\binary\Function%28TArg,TResult.cs" />
+    <Compile Include="function\binary\FunctionI%28TArg1,TArg2%29.cs" />
+    <Compile Include="function\EmptyFunc.cs" />
+    <Compile Include="function\ExprI%28T%29.cs" />
+    <Compile Include="function\ExprI.cs" />
+    <Compile Include="function\FunctionI%28TResult%29.cs" />
+    <Compile Include="function\FunctionI.cs" />
+    <Compile Include="function\nullary\Expr%28T%29.cs" />
+    <Compile Include="function\nullary\NullaryFunction%28T.cs" />
+    <Compile Include="function\nullary\X.cs" />
+    <Compile Include="function\unary\Expr%28TArg,TResult.cs" />
+    <Compile Include="function\unary\Function%28TArg,TResult.cs" />
+    <Compile Include="function\unary\FunctionI%28TArg,TResult.cs" />
+    <Compile Include="function\unary\FunctionI.cs" />
+    <Compile Include="function\unary\IdentityFunc%28T.cs" />
+    <Compile Include="HtmlSafe.cs" />
+    <Compile Include="Interface_.cs" />
+    <Compile Include="Literal%28T%29.cs" />
+    <Compile Include="LiteralExprI%28T%29.cs" />
+    <Compile Include="LiteralExprI.cs" />
+    <Compile Include="LiteralI%28T%29.cs" />
+    <Compile Include="LiteralI.cs" />
+    <Compile Include="LiteralI2_T_.cs" />
+    <Compile Include="NullaryTuple%28T.cs" />
+    <Compile Include="num\NumX.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ObjectTostrX.cs" />
+    <Compile Include="op\binary\BiOpI%28P1,P2%29.cs" />
+    <Compile Include="op\binary\BiOpI%28P1,P2,R%29.cs" />
+    <Compile Include="op\binary\BiOpI%28R%29.cs" />
+    <Compile Include="op\binary\BiOpI.cs" />
+    <Compile Include="op\binary\ClosedBiOpI%28T%29.cs" />
+    <Compile Include="op\binary\CommutativeI.cs" />
+    <Compile Include="op\binary\expr\ArgsA.cs" />
+    <Compile Include="op\binary\expr\BiOpCallA%28A1,A2%29.cs" />
+    <Compile Include="op\binary\expr\BiOpCallA%28A1,A2, Op%29.cs" />
+    <Compile Include="op\binary\expr\BiOpCallExpr%28P1,P2,R%29.cs" />
+    <Compile Include="op\binary\expr\BiOpCallExprl%28A1,A2,Op,P1,P2,R%29.cs" />
+    <Compile Include="op\binary\expr\BiOpCallLiteral%28A1,A2,Op,P1,P2,R%29.cs" />
+    <Compile Include="op\binary\expr\BiOpCallLiteral%28P1,P2,R%29.cs" />
+    <Compile Include="op\binary\expr\ClosedBiOpCallLiteral%28P%29.cs" />
+    <Compile Include="op\binary\expr\ClosedBiOpExpr%28P%29.cs" />
+    <Compile Include="op\binary\expr\Expr.cs" />
+    <Compile Include="op\binary\expr\ExprVar.cs" />
+    <Compile Include="op\binary\FuncAsBiOp%28P1,P2,R%29.cs" />
+    <Compile Include="op\ClosedOpI%28T%29.cs" />
+    <Compile Include="op\ClosedOpI.cs" />
+    <Compile Include="op\Const%28T%29.cs" />
+    <Compile Include="op\ConstantFunction%28T.cs" />
+    <Compile Include="op\ConstantFunction.cs" />
+    <Compile Include="op\ConstI%28T%29.cs" />
+    <Compile Include="op\ConstI.cs" />
+    <Compile Include="op\EmptyFunc.cs" />
+    <Compile Include="op\ExprI%28T%29.cs" />
+    <Compile Include="op\ExprI.cs" />
+    <Compile Include="op\FunctionI.cs" />
+    <Compile Include="op\Idempotence.cs" />
+    <Compile Include="op\list\Class1.cs" />
+    <Compile Include="op\list\ListOpI%28TArg,TResult%29 %284%29.cs" />
+    <Compile Include="op\list\ListOpI%28TArgs%29 %284%29.cs" />
+    <Compile Include="op\list\ListOpI.cs" />
+    <Compile Include="op\list\ListOpI_R.cs" />
+    <Compile Include="op\list\_closed\ClosedListOpI%28TField%29.cs" />
+    <Compile Include="op\list\_expr\ListOpCallA%28Op,Arg%29.cs" />
+    <Compile Include="op\list\_expr\ListOpCallI%28A,Op%29.cs" />
+    <Compile Include="op\list\_expr\ListOpCallI.cs" />
+    <Compile Include="op\list\_expr\ListOpCallI_A%28A%29.cs" />
+    <Compile Include="op\list\_expr\ListOpCallI_Op%28TOp%29.cs" />
+    <Compile Include="op\list\_expr\ListOpConstI%28A,P%29.cs" />
+    <Compile Include="op\list\_expr\ListOpConstI%28A,P,R%29.cs" />
+    <Compile Include="op\list\_expr\ListOpExprI%28A,P%29.cs" />
+    <Compile Include="op\list\_expr\ListOpExprtI%28A,P,R%29.cs" />
+    <Compile Include="op\NullaryFunction%28T.cs" />
+    <Compile Include="op\NullaryOp NullFunc.cs" />
+    <Compile Include="op\Op0I.cs" />
+    <Compile Include="op\OpI%28R%29.cs" />
+    <Compile Include="op\OpI%28R,P1%29 %282%29.cs" />
+    <Compile Include="op\OpI.cs" />
+    <Compile Include="op\OpI_P1 %282%29.cs" />
+    <Compile Include="op\unary\ClosedUnaOpI%28T%29.cs" />
+    <Compile Include="op\unary\Identity.cs" />
+    <Compile Include="op\unary\UnaOp%28P,R%29.cs" />
+    <Compile Include="op\unary\UnaOpI%28P,R%29.cs" />
+    <Compile Include="op\unary\UnaOpI%28R%29.cs" />
+    <Compile Include="op\unary\UnaOpI.cs" />
+    <Compile Include="op\unary\UnaOpI_P%28P%29.cs" />
+    <Compile Include="op\unary\_expr\ClosedUnaOpConstI%28T%29.cs" />
+    <Compile Include="op\unary\_expr\ClosedUnaOpExprI%28T%29.cs" />
+    <Compile Include="op\unary\_expr\UnaFuncCall%28P,R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaFuncCall2%28P,R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCall%28A,P,R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCall%28P,R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCall.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallA%28A,Op%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallI%28Op%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallI%28R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallI.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallI_A.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallI_A_Op%28A,Op%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpCallVal%28P,R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpConst%28P,R,A%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpConstI%28R,P,A%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpExpr%28P,R,A%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpExprI%28R%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpExprI%28R,P%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpExprI%28R,P,A%29.cs" />
+    <Compile Include="op\unary\_expr\UnaOpExprI_P.cs" />
+    <Compile Include="op\_expr\OpCallA%28TOp%29 %282%29.cs" />
+    <Compile Include="op\_expr\OpCallI %285%29.cs" />
+    <Compile Include="op\_expr\OpCallI%28TOp%29.cs" />
+    <Compile Include="op\_expr\OpCallI%28TOpR%29.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefI%28T.cs" />
+    <Compile Include="colleciton\adjectives\decorated\FiniteSet.cs" />
+    <Compile Include="colleciton\adjectives\decorated\SingletonSet.cs" />
+    <Compile Include="colleciton\adjectives\Empty.cs" />
+    <Compile Include="colleciton\adjectives\EmptyAssert.cs" />
+    <Compile Include="colleciton\adjectives\EmptyX.cs" />
+    <Compile Include="colleciton\adjectives\Finite.cs" />
+    <Compile Include="colleciton\adjectives\Singleton.cs" />
+    <Compile Include="colleciton\Cardinal.cs" />
+    <Compile Include="colleciton\ClassOfSets.cs" />
+    <Compile Include="colleciton\Combinate.cs" />
+    <Compile Include="colleciton\EmptySet%28T.cs" />
+    <Compile Include="colleciton\EmptySet.cs" />
+    <Compile Include="colleciton\EmptySetI %2812%29.cs" />
+    <Compile Include="colleciton\EqualityComparer.cs" />
+    <Compile Include="colleciton\EqualsX.cs" />
+    <Compile Include="colleciton\Field.cs" />
+    <Compile Include="colleciton\HashSet%28T,IEqualityCompaer%29.cs" />
+    <Compile Include="colleciton\InductiveI.cs" />
+    <Compile Include="colleciton\InfinityI.cs" />
+    <Compile Include="colleciton\IsHashSet.cs" />
+    <Compile Include="colleciton\Literal.cs" />
+    <Compile Include="colleciton\op\BinaryI.cs" />
+    <Compile Include="colleciton\op\Diff.cs" />
+    <Compile Include="colleciton\op\expr\Binary.cs" />
+    <Compile Include="colleciton\op\expr\BinaryI.cs" />
+    <Compile Include="colleciton\op\expr\Union%28T.cs" />
+    <Compile Include="colleciton\op\expr\Union2%28T,Eq .cs" />
+    <Compile Include="colleciton\op\expr\Union2%28T.cs" />
+    <Compile Include="colleciton\op\Intersect.cs" />
+    <Compile Include="colleciton\op\SuccessorX.cs" />
+    <Compile Include="colleciton\op\Union.cs" />
+    <Compile Include="colleciton\op\Xor.cs" />
+    <Compile Include="colleciton\Partition.cs" />
+    <Compile Include="colleciton\PowerSetX.cs" />
+    <Compile Include="colleciton\Recursive.cs" />
+    <Compile Include="colleciton\rel\Disjoint.cs" />
+    <Compile Include="colleciton\rel\Joint.cs" />
+    <Compile Include="colleciton\rel\Subset.cs" />
+    <Compile Include="colleciton\Set%28T.cs" />
+    <Compile Include="colleciton\Set.cs" />
+    <Compile Include="colleciton\SetByPredicate%28T.cs" />
+    <Compile Include="colleciton\SetI%28T.cs" />
+    <Compile Include="colleciton\SetI.cs" />
+    <Compile Include="colleciton\SigmaAlgebra %2821%29.cs" />
+    <None Include="bit\op\binary\binary.cd" />
+    <None Include="function\unary\unary.op.cd" />
+    <None Include="op\binary\biOp.cd" />
+    <None Include="op\list\ClassDiagram1.cd" />
+    <None Include="op\list\_closed\ClassDiagram1.cd" />
+    <None Include="op\list\_expr\ClassDiagram1.cd" />
+    <None Include="op\op.cd" />
+    <None Include="op\unary\unary.op.cd" />
+    <None Include="op\unary\_expr\unaryOpExpr.cd" />
+    <None Include="op\_expr\opCall.cd" />
+    <None Include="colleciton\TostrX.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SingletonByDefault%28T%29.cs" />
+    <Compile Include="SingltonOfMember%28T.cs" />
+    <Compile Include="str\X.cs" />
+    <Compile Include="SwapX.cs" />
+    <Compile Include="TostrX.cs" />
+    <Compile Include="ToStrX2.cs" />
+    <Compile Include="Type.cs" />
+    <Compile Include="UnexpectedTypeException.cs" />
+    <Compile Include="UnknownTypeException.cs" />
+    <Compile Include="ValI%28T%29.cs" />
+    <Compile Include="ValidationResultI.cs" />
+    <Compile Include="Var%28T%29.cs" />
+    <Compile Include="VarExprI%28T%29.cs" />
+    <Compile Include="VarExprI.cs" />
+    <Compile Include="VarI%28T%29.cs" />
+    <Compile Include="VarI.cs" />
+    <Compile Include="X.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="expr.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="op\list\multiOp.txt" />
+    <Content Include="op\op.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bit\op\binary\_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4EBA679-A54F-4055-9F65-89A115F3AB3E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul</RootNamespace>
+    <AssemblyName>nilnul%28UnaOp120410%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClosedUnaOpI%28T%29 %282%29.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnaOpI %282%29.cs" />
+    <Compile Include="UnaOpI%28R%29 %282%29.cs" />
+    <Compile Include="UnaOpI%28R,P%29 %282%29.cs" />
+    <Compile Include="UnaOpI_P%28P%29 %282%29.cs" />
+    <Compile Include="_expr\ClosedUnaOpConstI%28T%29.cs" />
+    <Compile Include="_expr\ClosedUnaOpExprI%28T%29.cs" />
+    <Compile Include="_expr\FuncCallA.cs" />
+    <Compile Include="_expr\Expr%28Val%29.cs" />
+    <Compile Include="_expr\Expr.cs" />
+    <Compile Include="_expr\UnaOpCallA%28A,Op%29.cs" />
+    <Compile Include="_expr\UnaOpCallI%28Op%29.cs" />
+    <Compile Include="_expr\UnaOpCallI.cs" />
+    <Compile Include="_expr\UnaOpCallI_A.cs" />
+    <Compile Include="_expr\UnaOpCallI_A_Op%28A,Op%29.cs" />
+    <Compile Include="_expr\UnaOpConst%28P,R,A%29.cs" />
+    <Compile Include="_expr\UnaOpConstI%28R,P,A%29.cs" />
+    <Compile Include="_expr\UnaOpExpr%28P,R,A%29.cs" />
+    <Compile Include="_expr\UnaOpExprI%28R%29.cs" />
+    <Compile Include="_expr\UnaOpExprI%28R,P%29.cs" />
+    <Compile Include="_expr\UnaOpExprI%28R,P,A%29.cs" />
+    <Compile Include="_expr\UnaOpExprI_P.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="unary.op.cd" />
+    <None Include="_expr\unaryOpExpr.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nilnul%28op120410%29\nilnul%28op120410%29.csproj">
+      <Project>{9ccfe57f-c4bd-42d6-aa12-a4925fb2e2cd}</Project>
+      <Name>nilnul%28op120410%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nilnul\nilnul.csproj">
+      <Project>{2b62b4ea-d3ad-4d78-a0d9-89dc0e2b7592}</Project>
+      <Name>nilnul</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

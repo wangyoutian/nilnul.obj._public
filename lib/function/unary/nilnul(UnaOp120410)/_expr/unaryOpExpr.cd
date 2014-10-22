@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="nilnul.op.ClosedUnaOpConstI&lt;T&gt;" Collapsed="true">
+    <Position X="5" Y="8.5" Width="2.5" />
+    <InheritanceLine Type="nilnul.op.UnaOpConstI&lt;P, R, A&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="7.8" />
+        <Point X="8" Y="8.125" />
+        <Point X="6.75" Y="8.125" />
+        <Point X="6.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\ClosedUnaOpConstI(T).cs</FileName>
+      <NewMemberFileName>_expr\ClosedUnaOpExprI(T).cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpCallI_A&lt;A&gt;" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpCallI_A.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpCallI&lt;A, Op&gt;" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.75" />
+    <InheritanceLine Type="nilnul.op.UnaOpCallI_Op&lt;Op&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="2.68" />
+        <Point X="7.375" Y="3.125" />
+        <Point X="6.375" Y="3.125" />
+        <Point X="6.375" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpExprI(R,P).cs</FileName>
+      <NewMemberFileName>_expr\UnaOpCallI_A_Op(A,Op).cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpCallI" Collapsed="true">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpCallI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpConstI&lt;P, R, A&gt;" Collapsed="true">
+    <Position X="7" Y="7" Width="2" />
+    <InheritanceLine Type="nilnul.op.UnaOpExprI&lt;P, R, A&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="5.8" />
+        <Point X="7.25" Y="6.625" />
+        <Point X="7.75" Y="6.625" />
+        <Point X="7.75" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpConstI(R,P,A).cs</FileName>
+      <NewMemberFileName>_expr\UnaOpExprI(R,P,A).cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpCallI_Op&lt;Op&gt;" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.75" />
+    <InheritanceLine Type="nilnul.op.UnaOpCallI" FixedFromPoint="true">
+      <Path>
+        <Point X="6.5" Y="1.309" />
+        <Point X="6.5" Y="1.625" />
+        <Point X="7.375" Y="1.625" />
+        <Point X="7.375" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpCallI(Op).cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.op.UnaOpExprI&lt;P, R, A&gt;" Collapsed="true">
+    <Position X="6.25" Y="5" Width="2" />
+    <InheritanceLine Type="nilnul.op.UnaOpCallI&lt;A, Op&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="6.375" Y="4.3" />
+        <Point X="6.375" Y="4.625" />
+        <Point X="7.25" Y="4.625" />
+        <Point X="7.25" Y="5" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="nilnul.ExprI&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="4.18" />
+        <Point X="8.875" Y="4.625" />
+        <Point X="7.5" Y="4.625" />
+        <Point X="7.5" Y="5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\UnaOpExprI(R,P,A).cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.ExprI&lt;T&gt;" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="nilnul.ConstI&lt;T&gt;" Collapsed="true">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="nilnul.op.ClosedUnaOpExprI&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="7" Width="2.5" />
+    <InheritanceLine Type="nilnul.op.UnaOpExprI&lt;P, R, A&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.938" Y="5.8" />
+        <Point X="6.938" Y="6.625" />
+        <Point X="4.938" Y="6.625" />
+        <Point X="4.938" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_expr\ClosedUnaOpExprI(T).cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
